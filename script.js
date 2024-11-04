@@ -15,6 +15,7 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
         });
         const data = await response.json();
         document.getElementById('errorMessage').textContent = data.message;
+        console.log("Conexão realizada!")
     } catch (error) {
         document.getElementById('errorMessage').textContent = "Erro de conexão com o servidor.";
     }

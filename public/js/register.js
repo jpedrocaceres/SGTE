@@ -2,6 +2,7 @@ document.getElementById('registerForm').addEventListener('submit', async functio
     e.preventDefault();
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
+    console.log(username, password);
 
     try {
         const response = await fetch('http://localhost:3300/register', {
